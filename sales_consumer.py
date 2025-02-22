@@ -25,6 +25,8 @@ class Consumer(Thread):
             sales = json.loads(msg.value().decode('utf-8'))
             self.tracker.update(sales['Profit'])
             time.sleep(2)
-        
+
+    def close(self):
+        self.tracker.running
         self.consumer.close()
         print("consumer succesfully shutdown")

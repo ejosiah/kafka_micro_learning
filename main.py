@@ -13,6 +13,7 @@ c.start()
 
 
 ui.join()
-c.join()
-pt.join()
+pt.close()
+c.close()
+
 print("sales consumer sucessfully shutdown")

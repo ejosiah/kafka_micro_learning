@@ -34,10 +34,10 @@ class ProfitTracker(Thread):
                 print(f"unable to print latest profit, reason {exp}")
             finally:
                 self.lock.release()
-
-        print("Profit track succesfully shutdown")
     
     def close(self):
-       self.running = False
+        self.running = False
+        self.join()
+        print("Profit track succesfully shutdown")
 
 

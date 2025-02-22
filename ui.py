@@ -65,7 +65,6 @@ class UI(Thread):
 
         pygame.font.quit()
         pygame.quit()
-        self.pt.close()
         print("UI succesfully shutdown")
 
 
