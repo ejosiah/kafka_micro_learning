@@ -24,7 +24,7 @@ class Consumer(Thread):
 
             sales = json.loads(msg.value().decode('utf-8'))
             self.tracker.update(sales['Profit'])
-            time.sleep(2)
+            time.sleep(0.5)
 
     def close(self):
         self.tracker.running

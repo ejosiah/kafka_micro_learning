@@ -22,7 +22,7 @@ class UI(Thread):
         self.font_size = 50
         pygame.init()
         pygame.font.init()
-        self.resolution = (720, 150)
+        self.resolution = (750, 150)
         pygame.display.set_caption("Sales profit tracker")
         self.screen = pygame.display.set_mode(self.resolution)
         self.clock = pygame.time.Clock()
